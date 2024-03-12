@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <link href="https://fonts.cdnfonts.com/css/supertea" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/adlam-display" rel="stylesheet">
+                    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <title>Paguina Principal</title>
+    </head>
+    <body>
+        <div style="margin: 24px;"> 
+          <nav class="nav navbar-light"
+          style="background-color: rgb(142, 214, 205);">
+          
+             <div class="container">
+              <a class="nav-brand" href="index.html" style="font-family: 'Supertea', sans-serif; color: #000">Inicio</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="nav navbar-nav">
+                      <li class="nav-item dropdown">
+                        
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Supertea', sans-serif; color: black;">Unidad 1</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="perfil.html">Perfil</a><br>
+                              <a class="dropdown-item" href="calculadora.html">Calculadora</a><br>
+                              <a class="dropdown-item" href="restaurante.html">Restaurante</a>
+                            </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Supertea', sans-serif; color: black;">Unidad 2</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="tiendapedido1.html">Tienda Pedido 1</a><br>
+                              <a class="dropdown-item" href="json.html">Json</a><br>
+                              <a class="dropdown-item" href="tiendapedido2.html">Tienda Pedido 2</a>
+                            </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Supertea', sans-serif; color: black;">Unidad 3</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="basededatos.html">Base de Datos</a><br>
+                              <a class="dropdown-item" href="peliculas.html">Peliculas</a>
+                            </div>
+                      </li>
+                  </ul>
+                </div>
+             </div>
+          </nav>
+      </div>
+      <h1>Menu del Restaurante</h1>
+      <style>
+        h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+            color: purple;
+        }
+        body{
+            background-color: pink;
+        }
+          img{
+              width: 200px;
+              height: auto;
+          }
+          tabla,th, td {
+          border: 1px solid ;
+          text-align: left;
+          padding: 10px;
+          font-family: 'ADLaM Display', sans-serif;
+      }
+      table{
+          width: 80%;
+          margin: 20px;
+          border-collapse: collapse;
+          box-shadow: 0 5px 15px rgb(107, 31, 207);;
+          margin-left: 50px;
+      }
+      tr:hover{
+          background-color: plum;
+      }
+      tr:nth-child(odd){
+          background-color: rgb(143, 228, 216);
+      }
+      </style>
+      <h2>Bebidas</h2>
+      <table>
+          <tr>
+              <th>Imagen</th>
+              <th>Descripcion</th>
+              <th>Precio</th>
+          </tr>
+          <tr>
+              <td> <img src="img2/agua.jpg" alt="Un vaso con agua fresca"></td>
+              <td><p>Este es un vaso con agua fresca o al tiempo, de garrafon purificada, se le asigna una por cliente.</p></td>
+              <td>$15</td>
+          </tr>
+          <tr>
+              <td> <img src="img2/jugo de naranja.jpg" alt="Un vaso de jugo de naranja"></td>
+              <td><p>Este es un vaso con con jugo de naranja con hielos y escarchado de azucar con una rebanada de limon.</p></td>
+              <td>$20</td>
+          </tr>
+          <tr>
+            <td> <img src="img2/cafe.jpg" alt="Taza de cafe"></td>
+            <td><p>Es una taza de cafe al gusto del cliente.</p></td>
+            <td>$25</td>
+        </tr>
+          <tr>
+              <td> <img src="img2/agua de limon.jpg" alt="Un vaso con limonada fresca"></td>
+              <td><p>Este es un vaso con limonada fresca con hielos y de decoracion pedazos de limon.</p></td>
+              <td>$24</td>
+          </tr>
+          <tr>
+              <td> <img src="img2/vino.jpg" alt="Botella de vino tinto"></td>
+              <td><p>Este es un vino tinto de la mejor calidad, y de cortesia una copa por cliente.</p></td>
+              <td>$270</td>
+          </tr>
+          <tr>
+            <td> <img src="img2/coca cola.jpg" alt="Coca cola de vidrio"></td>
+            <td><p>Es una botella de refresco de coca cola de 600ml.</p></td>
+            <td>$18</td>
+        </tr>
+      </table>
+      <h2>Desayunos</h2>
+      <table>
+          <tr>
+              <th>Imagen</th>
+              <th>Descripcion</th>
+              <th>Precio</th>
+          </tr>
+          <tr>
+              <td> <img src="img2/hot cakes.jpg" alt="Plato con hot cakes"></td>
+              <td><p>Es un plato que contiene 6 hot cakes, con 3 toppings al gusto del cliente.</p></td>
+              <td>$78</td>
+          </tr>
+          <tr>
+              <td> <img src="img2/cereal.jpg" alt="Plato de cereal"></td>
+              <td><p>Plato de cereal azucarado con fruta (Fresa, Kiwi, Platano, Uva). </p></td>
+              <td>$30</td>
+          </tr>
+          <tr>
+            <td> <img src="img2/fruta.jpg" alt="Plato con fruta"></td>
+            <td><p>Plato con 4 tipos de fruta picada.</p></td>
+            <td>$40</td>
+        </tr>
+          <tr>
+              <td> <img src="img2/omelette.jpg" alt="omelette "></td>
+              <td><p>Huevo en omelette con lechuga y tomate adicional.</p></td>
+              <td>$36</td>
+          </tr>
+          <tr>
+              <td> <img src="img2/waffles.jpg" alt="waffles chorriados"></td>
+              <td><p>Plato con 3 waffles cuadrados con lechera o cajeta y fruta o granola.</p></td>
+              <td>$70</td>
+          </tr>
+          <tr>
+            <td> <img src="img2/huevo estrellado.jpg" alt="Huevo estrellado"></td>
+            <td><p>Huevo estrellado con pan tostado y salsa gratis</p></td>
+            <td>$20</td>
+        </tr>
+      </table>
+      <h2>Comida mexicana</h2>
+      <table>
+          <tr>
+              <th>Imagen</th>
+              <th>Descripcion</th>
+              <th>Precio</th>
+          </tr>
+          <tr>
+              <td> <img src="img2/chiles rellenos.jpg" alt="Plato con chiles rellenos"></td>
+              <td><p>Es un plato que contiene 8 chiles rellenos de (queso, carne molida o pollo).</p></td>
+              <td>$100</td>
+          </tr>
+          <tr>
+              <td> <img src="img2/sopes.jpg" alt="Plato con sopes"></td>
+              <td><p>Plato con una orden de 4 sopes que llevan (frijol, queso, lechula, salsa) Sope adicional se le cobra $20. </p></td>
+              <td>$70</td>
+          </tr>
+          <tr>
+            <td> <img src="img2/flautas.jpg" alt="Orden de flautas"></td>
+            <td><p>Orden de 4 flautas con (lechuga, frijol y queso ) </p></td>
+            <td>$45</td>
+        </tr>
+          <tr>
+              <td> <img src="img2/tacos.jpg" alt="Tacos"></td>
+              <td><p>Orden de 5 tacos de (Desebrada, chicharron, bistec) de tortilla de (Harina o de maiz).</p></td>
+              <td>$90</td>
+          </tr>
+          <tr>
+              <td> <img src="img2/nachos.jpg" alt="Plato de nachos"></td>
+              <td><p>Plato con nachos que se le agrega queso amarillo y chiles jalapeños.</p></td>
+              <td>$34</td>
+          </tr>
+          <tr>
+            <td> <img src="img2/guacamole.jpg" alt="guacamole"></td>
+            <td><p>Guacamole con totopos.</p></td>
+            <td>$50</td>
+        </tr>
+      </table>
+      <h2>Postres</h2>
+      <table>
+          <tr>
+              <th>Imagen</th>
+              <th>Descripcion</th>
+              <th>Precio</th>
+          </tr>
+          <tr>
+              <td> <img src="img2/pay de queso.jpg" alt="Plato con hot cakes"></td>
+              <td><p>Pay de queso en charola, la rebanda tiene otro precio.</p></td>
+              <td>$80</td>
+          </tr>
+          <tr>
+              <td> <img src="img2/helado.jpg" alt="Helado en cono"></td>
+              <td><p>Helado en cono ancho con 3 bolitas del sabor a elejir. </p></td>
+              <td>$30</td>
+          </tr>
+          <tr>
+            <td> <img src="img2/gelatina de mosaico.jpg" alt="Gelatina de mosaico"></td>
+            <td><p>Plato con gelatina de mosaico, si es en rebanda es otro precio.</p></td>
+            <td>$64</td>
+        </tr>
+          <tr>
+              <td> <img src="img2/carlota de limon.jpg" alt="omelette "></td>
+              <td><p>Carlota de limon para 8 personas.</p></td>
+              <td>$76</td>
+          </tr>
+          <tr>
+              <td> <img src="img2/brownie.jpg" alt="brownie"></td>
+              <td><p>Brownie de chocolate con cajeta en cima.</p></td>
+              <td>$20</td>
+          </tr>
+          <tr>
+            <td> <img src="img2/macarrones.jpg" alt="Macarrones de colores"></td>
+            <td><p>Macarrones de 3 diferentes sabores y colores.</p></td>
+            <td>$15</td>
+        </tr>
+      </table>
+      <h2>Cena</h2>
+      <table>
+          <tr>
+              <th>Imagen</th>
+              <th>Descripcion</th>
+              <th>Precio</th>
+          </tr>
+          <tr>
+              <td> <img src="img2/spaghetti.jpg" alt="Plato de spaghetti"></td>
+              <td><p>Plato con spaghetti rojo con salchicha.</p></td>
+              <td>$48</td>
+          </tr>
+          <tr>
+              <td> <img src="img2/pizza.jpg" alt="Pizza"></td>
+              <td><p>Pizza de pepperonie, rebanadas en $25. </p></td>
+              <td>$99</td>
+          </tr>
+          <tr>
+            <td> <img src="img2/caldo de verduras.jpg" alt="Plato con caldo de verduras"></td>
+            <td><p>Plato con caldo de verduras y carne de res.</p></td>
+            <td>$87</td>
+        </tr>
+          <tr>
+              <td> <img src="img2/pollo asado.jpg" alt="Pollo asado"></td>
+              <td><p>Pollo entero asado con ingredientes adicionales.</p></td>
+              <td>$150</td>
+          </tr>
+          <tr>
+              <td> <img src="img2/filete.jpg" alt="filete"></td>
+              <td><p>Filete bien preparado con pedazos de tomatillo y cebollina.</p></td>
+              <td>$120</td>
+          </tr>
+          <tr>
+            <td> <img src="img2/pollo a la plancha.jpg" alt="Pollo a la plancha"></td>
+            <td><p>Pollo a la plancha con lechuga y tomatillo.</p></td>
+            <td>$135</td>
+        </tr>
+      </table>
+  
+</body>
+</html>
