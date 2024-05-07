@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <link href="https://fonts.cdnfonts.com/css/supertea" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/bellona" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/derpache-caps" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/go-bear" rel="stylesheet">
+                
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <title>Restaurante Cetis menu</title>
+</head>
+<body>
+    <div style="margin: 24px;"> 
+      <nav class="nav navbar-light"
+      style="background-color: rgb(142, 214, 205);">
+      
+         <div class="container">
+          <a class="nav-brand" href="index.html" style="font-family: 'Supertea', sans-serif; color: #000">Inicio</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="nav navbar-nav">
+                  <li class="nav-item dropdown">
+                    
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Supertea', sans-serif; color: black;">Unidad 1</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="perfil.html">Perfil</a><br>
+                          <a class="dropdown-item" href="calculadora.html">Calculadora</a><br>
+                          <a class="dropdown-item" href="restaurante.html">Restaurante</a>
+                        </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Supertea', sans-serif; color: black;">Unidad 2</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="tiendapedido1.html">Tienda Pedido 1</a><br>
+                          <a class="dropdown-item" href="json.html">Json</a><br>
+                          <a class="dropdown-item" href="tiendapedido2.html">Tienda Pedido 2</a>
+                        </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Supertea', sans-serif; color: black;">Unidad 3</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="basededatos.html">Base de Datos</a><br>
+                          <a class="dropdown-item" href="peliculas.html">Peliculas</a>
+                        </div>
+                  </li>
+              </ul>
+            </div>
+         </div>
+      </nav>
+  </div>
+  <style>
+    body{
+        font-family: 'Go Bear', sans-serif;
+        background-color: pink;
+        margin: 0;
+        padding: 20px;
+        color: black;
+    }
+    h1{
+        font-family: 'Derpache Caps', sans-serif;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+    h2{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-family: 'Bellona', sans-serif;
+    }
+    button{
+        background-color: rgb(172, 96, 243);
+        color: rgb(0, 0, 0);
+        padding: 10px 15px;
+        margin: 20px 0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+    button:hover{
+        background-color: rgb(187, 130, 240);
+        color: #000;
+    }
+    .seccion{
+      margin-bottom: 20px;
+    }
+    .seccion-header{
+      font-size: 18px;
+      color: #000;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 15px
+    }
+    #order{
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 15px grey;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    }
+    select input[type="number"]{
+      width: 50%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="radio"]{
+      margin-right: 5px;
+    }
+    label{
+      font-weight: bold;
+      margin-top: 15px;
+    }
+  </style>
+  <h1>Abarrotes</h1>
+  <h2>"Los escandalosos"</h2>
+
+  <form id="orden">
+    <div class="seccion">
+        <label for="abarrotes">Abarrotes</label>
+        <select id="abarrotes">
+            <option value="aceites comestibles">Aceites comestibles</option>
+            <option value="aderezos">Aderezos</option>
+            <option value="arroz">Arroz</option>
+            <option value="consome">Consome</option>
+            <option value="crema de cacahuate">Crema de cacahuate</option>
+            <option value="crema para cafe">Crema para cafe</option>
+            <option value="pure de tomate">Pure de tomate</option>
+            <option value="alimento para bebe">Alimento para bebe</option>
+            <option value="alimento para mascotas">Alimento para mascotas</option>
+            <option value="atole">Atole</option>
+            <option value="avena">Avena</option>
+            <option value="azucar">Azucar</option>
+            <option value="cafe">Cafe</option>
+            <option value="cereales">Cereales</option>
+            <option value="chile piquin">Chile piquin</option>
+            <option value="especies">Especies</option>
+            <option value="flan en polvo">Flan en polvo</option>
+            <option value="formulas infantiles">Formulas infantiles</option>
+            <option value="gelatinas en polvo/grenetina">Gelatinas en polvo/Grenetina</option>
+            <option value="harina/harina preparada">Harina/Harina preparada</option>
+            <option value="mole">Mole</option>
+            <option value="sal">Sal</option>
+            <option value="salsas envasadas">Salsas envasadas</option>
+            <option value="sazonadores">Sazonadores</option>
+            <option value="sopas en sobre">Sopas en sobre</option>
+            <option value="cajeta">Cajeta</option>
+            <option value="catsup">Catsup</option>
+            <option value="mayonesa">Mayonesa</option>
+            <option value="mermelada">Mermelada</option>
+            <option value="miel">Miel</option>
+            <option value="te">Te</option>
+            <option value="vinagre">Vinagre</option>
+            <option value="huevo">Huevo</option>
+            <option value="pasta">Pasta</option>
+        </select>
+        <div>
+            Cantidad:
+            <label><input type="radio" name="cantidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="5">5</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="6">6</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="7">7</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="8">8</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="9">9</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="10">10</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="11">11</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="12">12</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="13">13</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="14">14</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="15">15</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="16">16</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="17">17</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="18">18</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="19">19</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="20">20</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="21">21</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="22">22</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="23">23</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="24">24</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="25">25</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="26">26</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="27">27</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="28">28</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="29">29</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="30">30</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="31">31</label>
+            <label><input type="radio" name="cantidadAbarrotes" value="32">32</label>
+         </div>
+    </div>
+
+    <div class="seccion">
+        <label for="enlatados">Enlatados</label>
+        <select name="enlatados" id="enlatados">
+            <option value="aceitunas">Aceitunas</option>
+            <option value="champiñones enteros/rebanados">Champiñones enteros/rebanados</option>
+            <option value="chicharos">Chicharos</option>
+            <option value="frijoles">Frijoles</option>
+            <option value="frutas en almibar">Frutas en almibar</option>
+            <option value="sardinas">Sardinas</option>
+            <option value="atún en agua/aceite">Atún en agua/aceite</option>
+            <option value="chiles">Chiles</option>
+            <option value="ensaladas">Ensaladas</option>
+            <option value="granos de elote">Granos de elote</option>
+            <option value="sopa">Sopa</option>
+            <option value="vegetales en conserva">Vegetales en conserva</option>
+        </select>
+    <div>
+    Cantidad:
+            <label><input type="radio" name="cantidadEnlatados" value="1">1</label>
+            <label><input type="radio" name="cantidadEnlatados" value="2">2</label>
+            <label><input type="radio" name="cantidadEnlatados" value="3">3</label>
+            <label><input type="radio" name="cantidadEnlatados" value="4">4</label>
+            <label><input type="radio" name="cantidadEnlatados" value="5">5</label>
+            <label><input type="radio" name="cantidadEnlatados" value="6">6</label>
+            <label><input type="radio" name="cantidadEnlatados" value="7">7</label>
+            <label><input type="radio" name="cantidadEnlatados" value="8">8</label>
+            <label><input type="radio" name="cantidadEnlatados" value="9">9</label>
+            <label><input type="radio" name="cantidadEnlatados" value="10">10</label>
+            <label><input type="radio" name="cantidadEnlatados" value="11">11</label>
+            <label><input type="radio" name="cantidadEnlatados" value="12">12</label>
+      </div>
+      </div>
+      <div class="seccion">
+        <label for="lacteos">Lacteos</label>
+        <select name="lacteos" id="lacteos">
+            <option value="leche condesada/evaporada">Leche condesada/evaporada</option>
+            <option value="yogur">Yogur</option>
+            <option value="leche entera/deslactosada/light">Leche entera/deslactosada/light</option>
+            <option value="crema/media crema">Crema/media crema</option>
+            <option value="leche pasteurizada/en polvo">Leche pasteurizada/en polvo</option>
+            <option value="mantequilla">Mantequilla</option>
+            <option value="margarina">Margarina</option>
+            <option value="queso">Queso</option>
+        </select>
+    <div>
+    Cantidad:
+            <label><input type="radio" name="cantidadLacteos" value="1">1</label>
+            <label><input type="radio" name="cantidadLacteos" value="2">2</label>
+            <label><input type="radio" name="cantidadLacteos" value="3">3</label>
+            <label><input type="radio" name="cantidadLacteos" value="4">4</label>
+            <label><input type="radio" name="cantidadLacteos" value="5">5</label>
+            <label><input type="radio" name="cantidadLacteos" value="6">6</label>
+            <label><input type="radio" name="cantidadLacteos" value="7">7</label>
+            <label><input type="radio" name="cantidadLacteos" value="8">8</label>
+      </div>
+      </div>
+      <div class="seccion">
+        <label for="botanas">Botanas</label>
+        <select name="botanas" id="botanas">
+            <option value="papas">Papas</option>
+            <option value="palomitas">Palomitas</option>
+            <option value="frituras de maíz">Frituras de maíz</option>
+            <option value="cacahuates">Cacahuates</option>
+            <option value="botanas saladas">Botanas saladas</option>
+            <option value="barras alimenticias">Barras alimenticias</option>
+            <option value="nueces y semillas">Nueces y semillas</option>
+        </select>
+    <div>
+    Cantidad:
+            <label><input type="radio" name="cantidadBotanas" value="1">1</label>
+            <label><input type="radio" name="cantidadBotanas" value="2">2</label>
+            <label><input type="radio" name="cantidadBotanas" value="3">3</label>
+            <label><input type="radio" name="cantidadBotanas" value="4">4</label>
+            <label><input type="radio" name="cantidadBotanas" value="5">5</label>
+            <label><input type="radio" name="cantidadBotanas" value="6">6</label>
+            <label><input type="radio" name="cantidadBotanas" value="7">7</label>
+      </div>
+      </div>
+      <div class="seccion">
+        <label for="confiteria">Confiteria</label>
+        <select name="confiteria" id="confiteria">
+            <option value="caramelos">Caramelos</option>
+            <option value="dulces enchilados">Dulces enchilados</option>
+            <option value="chocolate de mesa/en polvo">Chocolate de mesa/en polvo</option>
+            <option value="gomas de mascar">Gomas de mascar</option>
+            <option value="mazapán">Mazapán</option>
+            <option value="malvaviscos">Malvaviscos</option>
+            <option value="pulpa de tamarindo">Pulpa de tamarindo</option>
+            <option value="pastillas de dulce">Pastillas de dulce</option>
+            <option value="paletas de dulce">Paletas de dulce</option>
+        </select>
+    <div>
+    Cantidad:
+            <label><input type="radio" name="cantidadConfiteria" value="1">1</label>
+            <label><input type="radio" name="cantidadConfiteria" value="2">2</label>
+            <label><input type="radio" name="cantidadConfiteria" value="3">3</label>
+            <label><input type="radio" name="cantidadConfiteria" value="4">4</label>
+            <label><input type="radio" name="cantidadConfiteria" value="5">5</label>
+            <label><input type="radio" name="cantidadConfiteria" value="6">6</label>
+            <label><input type="radio" name="cantidadConfiteria" value="7">7</label>
+            <label><input type="radio" name="cantidadConfiteria" value="8">8</label>
+            <label><input type="radio" name="cantidadConfiteria" value="9">9</label>
+      </div>
+      </div>
+      <div class="seccion">
+        <label for="harinas">Harinas</label>
+        <select name="harinas" id="harinas">
+            <option value="tortillas de harina/maíz">Tortillas de harina/maíz</option>
+            <option value="galletas dulces/saladas">Galletas dulces/saladas</option>
+            <option value="pastelillos">Pastelillos</option>
+            <option value="pan de caja/dulce/molido/tostado">Pan de caja/dulce/molido/tostado</option>
+            <option value="pan dulce">Pan dulce</option>
+        </select>
+    <div>
+    Cantidad:
+            <label><input type="radio" name="cantidadHarinas" value="1">1</label>
+            <label><input type="radio" name="cantidadHarinas" value="2">2</label>
+            <label><input type="radio" name="cantidadHarinas" value="3">3</label>
+            <label><input type="radio" name="cantidadHarinas" value="4">4</label>
+            <label><input type="radio" name="cantidadHarinas" value="5">5</label>
+      </div>
+      </div>
+      <div class="seccion">
+        <label for="frutas y verduras">Frutas y verduras</label>
+        <select name="frutas y verduras" id="frutas y verduras">
+            <option value="tortillas de harina/maíz">Tortillas de harina/maíz</option>
+            <option value="galletas dulces/saladas">Galletas dulces/saladas</option>
+            <option value="pastelillos">Pastelillos</option>
+            <option value="pan de caja/dulce/molido/tostado">Pan de caja/dulce/molido/tostado</option>
+            <option value="pan dulce">Pan dulce</option>
+        </select>
+    <div>
+    Cantidad:
+            <label><input type="radio" name="cantidadHarinas" value="1">1</label>
+            <label><input type="radio" name="cantidadHarinas" value="2">2</label>
+            <label><input type="radio" name="cantidadHarinas" value="3">3</label>
+            <label><input type="radio" name="cantidadHarinas" value="4">4</label>
+            <label><input type="radio" name="cantidadHarinas" value="5">5</label>
+      </div>
+      </div>
+    <button type="button" onclick="submitForm()">Realizar Pedido</button>
+  </form>
+  <script>
+    function submitForm(){
+        const formElements = document.getElementById('orden');
+        const formData = new FormData(formElements);
+        const queryParams = new URLSearchParams();
+        
+        for(let[key,value] of formData.entries()){
+            queryParams.append(key,value);
+        }
+        window.location.href = `review_order.html?${queryParams}`;
+    }
+  </script>
+</body>
+</html>
